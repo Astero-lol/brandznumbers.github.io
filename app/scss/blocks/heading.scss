@@ -1,0 +1,26 @@
+@import '../vars';
+
+.heading {
+    font-weight: $bold;
+    font-size: 18px;
+
+    &_size {
+        &_s {
+            font-size: 25px;
+        }
+        &_m {
+            font-size: 32px;
+        }
+        &_l {
+            font-size: 45px;
+        }
+        &_xl {
+            font-size: 80px;
+            line-height: 1.2;
+        }
+        &_xxl {
+            font-size: 130px;
+            line-height: 1.2;
+        }
+    }
+}
