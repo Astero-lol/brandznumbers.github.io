@@ -4,16 +4,18 @@ $duration: 0.35s;
 // colors
 $bg-color: #FFF;
 $text-color: #333333;
-$brand-color: #EC6B37;
+$orange: #EC6B37;
+$green: #57AE79;
 
 $border-color: #D8D8D8;
 $note-color: #858585;
-$gray-color: #F7F8FA;
+$gray: #F7F8FA;
 
 $opacity: 0.6;
 
 //sizes
 $content-width: 1200px;
+$header-height: 105px;
 
 // gap
 $desktop-gap: 40px;
@@ -22,7 +24,7 @@ $phone-gap: 20px;
 
 // fonts
 $font: 'Roboto', Helvetica, sans-serif;
-$font-size: 14px;
-$line-height: 1.4;
+$font-size: 25px;
+$line-height: 1.5;
 $bold: 700;
 

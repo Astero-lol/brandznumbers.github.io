@@ -1,0 +1,31 @@
+.works-preview {
+  padding-bottom: 70px;
+
+  &__heading-wrapper {
+    max-width: 590px;
+    margin: 0 auto 120px;
+    text-align: center;
+  }
+
+  &__heading {
+    margin-bottom: 45px;
+  }
+
+  &__works {
+    margin-bottom: 40px;
+  }
+
+  &__work-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+  }
+
+  & .works-preview__work-row:last-of-type {
+    margin-bottom: 0;
+  }
+
+  &__work {
+    width: calc(50% - 20px);
+  }
+}

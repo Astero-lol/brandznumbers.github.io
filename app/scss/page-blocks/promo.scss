@@ -1,0 +1,53 @@
+@import "../vars";
+
+.promo {
+  display: flex;
+  min-height: calc(100vh - #{$header-height});
+
+  &__section {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+  }
+
+  &__empty {
+    flex: 1;
+  }
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &__media {
+    flex: 1 1 470px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    flex: 1 1 100%;
+    max-width: 670px;
+    margin-left: 100px;
+    padding-bottom: 55px;
+  }
+
+  &__label {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    font-size: 45px;
+  }
+
+  &__link {
+    display: block;
+    margin-top: 25px;
+    font-size: 16px;
+  }
+
+  &__content-wrapper {
+    flex: 1;
+  }
+}

@@ -1,0 +1,51 @@
+@import "../vars";
+
+.mission {
+  padding-bottom: 70px;
+
+  &__section {
+    display: flex;
+  }
+
+  &__image {
+    flex: 0 0 420px;
+  }
+
+  &__content {
+    flex: 1 1 100%;
+    padding: 60px 0 0 100px;
+  }
+
+  &__heading {
+    max-width: 540px;
+    margin-bottom: 45px;
+  }
+
+  &__results {
+    margin-bottom: 55px;
+    border-top: 3px solid $border-color;
+  }
+
+  &__results-row {
+    display: flex;
+    padding: 45px 0;
+    border-bottom: 3px solid $border-color;
+  }
+
+  &__results-block {
+    width: 50%;
+  }
+
+  &__result-label {
+    color: $orange;
+  }
+
+  &__result-value {
+    line-height: 1.1;
+    max-width: 160px;
+  }
+
+  &__text {
+    max-width: 480px;
+  }
+}

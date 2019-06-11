@@ -1,0 +1,24 @@
+.icon {
+  display: inline-block;
+
+  width: 88px;
+  height: 88px;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  &_type {
+    &_horse {
+      background-image: url('../../img/icons/horse.svg');
+    }
+    &_network {
+      background-image: url('../../img/icons/network.svg');
+    }
+    &_sketch {
+      background-image: url('../../img/icons/sketch.svg');
+    }
+    &_temp {
+      background-image: url('../../img/icons/temp.svg');
+    }
+  }
+}

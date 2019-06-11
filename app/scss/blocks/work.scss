@@ -1,0 +1,14 @@
+@import "../vars";
+
+.work {
+  &__image {
+    margin-bottom: 35px;
+  }
+
+  &__label {
+    margin-bottom: 5px;
+
+    font-size: 14px;
+    font-weight: $bold;
+  }
+}

@@ -1,0 +1,18 @@
+@import "../vars";
+
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 160px;
+
+  &__item {
+    list-style-type: none;
+  }
+
+  &__link {
+    font-size: 32px;
+    font-weight: $bold;
+  }
+}

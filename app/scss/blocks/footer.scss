@@ -1,0 +1,39 @@
+@import "../vars";
+
+.footer {
+  background-color: $gray;
+
+  &__section {
+    &_bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      height: 150px;
+    }
+  }
+
+  &__line {
+    background-color: $border-color;
+    height: 1px;
+  }
+
+  &__contacts {
+    margin-right: 70px;
+    & .footer__contacts-link:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  &__contacts-link {
+    display: block;
+    margin-bottom: 10px;
+
+    font-size: 14px;
+    font-weight: $bold;
+  }
+
+  &__info {
+    display: flex;
+  }
+}

@@ -4,36 +4,4 @@
 .section {
     max-width: $content-width;
     margin: 0 auto;
-    padding: 0 $desktop-gap;
-
-    @media #{$tablet-width} {
-        padding: 0 $tablet-gap;
-    }
-
-    @media #{$phone-width} {
-        padding: 0;
-    }
-
-    &__heading {
-        line-height: 1;
-    }
-
-    &__head-panel {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-
-        min-height: 35px;
-        margin-bottom: 20px;
-
-        @media #{$phone-width} {
-            min-height: initial;
-            padding: 0 $phone-gap;
-        }
-    }
-
-    &__head-panel-cell {
-        display: flex;
-        align-items: center;
-    }
 }

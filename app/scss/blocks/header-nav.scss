@@ -1,0 +1,19 @@
+@import "../vars";
+
+.header-nav {
+  display: flex;
+
+  &__item {
+    margin-right: 32px;
+    list-style-type: none;
+  }
+
+  &__link {
+    font-size: 14px;
+    font-weight: $bold;
+  }
+
+  & .header-nav__item:last-of-type {
+    margin-right: 0;
+  }
+}

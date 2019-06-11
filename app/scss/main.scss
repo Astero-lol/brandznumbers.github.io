@@ -12,8 +12,20 @@
 @import './blocks/header';
 @import './blocks/footer';
 @import './blocks/logo';
-@import './blocks/menu';
+@import './blocks/icon';
+@import './blocks/link';
+@import './blocks/work';
+@import './blocks/subscribe';
+@import './blocks/social';
+@import './blocks/copyright';
+@import './blocks/header-nav';
+@import './blocks/footer-nav';
 @import './blocks/app';
+
+@import "./page-blocks/promo";
+@import "./page-blocks/our-services";
+@import "./page-blocks/mission";
+@import "./page-blocks/works-preview";
 
 // media
 @import 'media';
