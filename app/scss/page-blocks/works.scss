@@ -1,0 +1,17 @@
+.works {
+  padding: 70px 0 100px;
+
+  &__heading {
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    max-width: 600px;
+    margin-bottom: 100px;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+  }
+}
