@@ -1,0 +1,31 @@
+@import "../vars";
+
+.blog {
+  padding: 70px 0 100px;
+
+  &__heading {
+    margin-bottom: 50px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding: 40px 0;
+
+    border-top: 1px solid $border-color;
+  }
+
+  &__content,
+  &__media {
+    width: 50%;
+  }
+
+  &__content {
+    padding-right: 140px;
+  }
+
+  &__description {
+    margin-bottom: 30px;
+  }
+}
