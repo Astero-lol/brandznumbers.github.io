@@ -1,0 +1,45 @@
+.team {
+  padding: 70px 0 100px;
+
+  &__heading {
+    margin-bottom: 100px;
+  }
+
+  &__list {
+    max-width: 1000px;
+    margin: 0 auto;
+
+    & .team__row:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
+
+  &__item {
+    width: calc(50% - 30px);
+  }
+
+  &__photo {
+    margin-bottom: 30px;
+  }
+
+  &__name {
+    margin-bottom: 5px;
+    line-height: 1;
+  }
+
+  &__role {
+    margin-bottom: 15px;
+    font-size: 14px;
+    opacity: 0.6;
+  }
+
+  &__description {
+    font-size: 14px;
+  }
+}
