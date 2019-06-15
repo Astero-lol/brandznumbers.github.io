@@ -22,6 +22,7 @@
 
   &__item {
     width: calc(50% - 30px);
+    cursor: pointer;
   }
 
   &__photo {
@@ -41,5 +42,33 @@
 
   &__description {
     font-size: 14px;
+  }
+
+  &__detail-item {
+    display: flex;
+    padding: 50px;
+    margin-bottom: 10px;
+
+    background-color: #fff;
+
+    & .team__role {
+      margin: 0;
+    }
+  }
+
+  &__detail-item-cell {
+    width: 50%;
+  }
+
+  &__detail-item-text p {
+    margin-bottom: 25px;
+  }
+
+  & .team__detail-item-text p:last-of-type {
+    margin-bottom: 0;
+  }
+
+  &__hide {
+    display: none;
   }
 }
