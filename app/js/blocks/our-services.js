@@ -7,4 +7,3 @@
         item.classList.toggle('our-services__block_active')
     }))
 })();
-

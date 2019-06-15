@@ -22,6 +22,7 @@ gulp.task('browser-sync', function() {
 // Минификация пользовательских скриптов проекта и JS библиотек в один файл
 gulp.task('js', function() {
 	return gulp.src([
+		'app/js/blocks/*.js',
 		'app/js/common.js', // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))
@@ -42,7 +43,7 @@ gulp.task('sass', function() {
 
 gulp.task('watch', ['sass', 'js', 'browser-sync'], function() {
 	gulp.watch('app/scss/**/*.scss', ['sass']);
-	gulp.watch(['libs/**/*.js', 'app/js/common.js'], ['js']);
+	gulp.watch(['libs/**/*.js', 'app/js/blocks/*.js','app/js/common.js'], ['js']);
 	gulp.watch('app/*.html', browserSync.reload);
 });
 
