@@ -4,4 +4,8 @@
 .section {
     max-width: $content-width;
     margin: 0 auto;
+
+    &_main {
+        margin-bottom: 100px;
+    }
 }
