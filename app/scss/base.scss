@@ -1,4 +1,5 @@
 @import 'vars';
+@import "media";
 
 html,
 body {
@@ -12,6 +13,10 @@ body {
     font-weight: normal;
 
     -webkit-text-size-adjust: 100%;
+
+    @media #{$tablet-width} {
+        font-size: $tablet-font-size;
+    }
 }
 
 

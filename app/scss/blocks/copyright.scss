@@ -1,4 +1,11 @@
+@import '../vars';
+@import '../media';
+
 .copyright {
+  @media #{$phone-width} {
+    margin-top: 25px;
+  }
+
   &__item {
     margin-bottom: 10px;
     font-size: 14px;

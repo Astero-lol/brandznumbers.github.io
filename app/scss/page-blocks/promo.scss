@@ -1,9 +1,14 @@
 @import "../vars";
+@import "../media";
 
 .promo {
   display: flex;
   height: calc(100vh - #{$header-height});
   max-height: 800px;
+
+  @media #{$tablet-width} {
+    height: initial;
+  }
 
   &__section {
     display: flex;
@@ -13,14 +18,26 @@
 
   &__empty {
     flex: 1;
+
+    @media #{$tablet-width} {
+      display: none;
+    }
   }
 
   &__wrapper {
     display: flex;
+
+    @media #{$phone-width} {
+      flex-direction: column-reverse;
+    }
   }
 
   &__media {
     flex: 1 1 470px;
+
+    @media #{$phone-width} {
+      display: block;
+    }
   }
 
   &__content {
@@ -31,6 +48,12 @@
     max-width: 670px;
     margin-left: 100px;
     padding-bottom: 55px;
+
+    @media #{$phone-width} {
+      display: block;
+      margin: 0 0 15px;
+      padding: 0;
+    }
   }
 
   &__label {
@@ -40,12 +63,20 @@
 
   &__text {
     font-size: 45px;
+
+    @media #{$tablet-width} {
+      font-size: 25px;
+    }
   }
 
   &__link {
     display: block;
     margin-top: 25px;
     font-size: 16px;
+
+    @media #{$phone-width} {
+      display: none;
+    }
   }
 
   &__content-wrapper {

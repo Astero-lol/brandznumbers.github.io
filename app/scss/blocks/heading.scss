@@ -1,4 +1,5 @@
 @import '../vars';
+@import '../media';
 
 .heading {
     font-weight: $bold;
@@ -7,12 +8,20 @@
     &_size {
         &_s {
             font-size: 25px;
+
+            @media #{$tablet-width} {
+                font-size: 18px;
+            }
         }
         &_m {
             font-size: 32px;
         }
         &_l {
             font-size: 45px;
+
+            @media #{$tablet-width} {
+                font-size: 25px;
+            }
         }
         &_xl {
             font-size: 80px;
@@ -21,6 +30,14 @@
         &_xxl {
             font-size: 130px;
             line-height: 0.9;
+
+            @media #{$tablet-width} {
+                font-size: 60px;
+            }
+
+            @media #{$phone-width} {
+                font-size: 45px;
+            }
         }
     }
 }

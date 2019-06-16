@@ -1,7 +1,12 @@
 @import "../vars";
+@import "../media";
 
 .header-nav {
   display: flex;
+
+  @media #{$phone-width} {
+    display: none;
+  }
 
   &__item {
     margin-right: 32px;

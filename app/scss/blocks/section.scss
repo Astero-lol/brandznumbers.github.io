@@ -5,7 +5,23 @@
     max-width: $content-width;
     margin: 0 auto;
 
+    @media #{$tablet-width} {
+        padding: 0 $tablet-gap;
+    }
+
+    @media #{$phone-width} {
+        padding: 0 $phone-gap;
+    }
+
     &_main {
         margin-bottom: 100px;
+
+        @media #{$tablet-width} {
+            margin-bottom: 70px;
+        }
+
+        @media #{$phone-width} {
+            margin-bottom: 50px;
+        }
     }
 }

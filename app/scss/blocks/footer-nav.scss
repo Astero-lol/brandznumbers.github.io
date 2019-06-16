@@ -1,4 +1,5 @@
 @import "../vars";
+@import "../media";
 
 .footer-nav {
   display: flex;
@@ -7,12 +8,39 @@
 
   height: 160px;
 
+  @media #{$tablet-width} {
+    height: 120px;
+  }
+
+  @media #{$phone-width} {
+    display: block;
+    height: auto;
+    padding: 25px 0;
+  }
+
   &__item {
     list-style-type: none;
+
+    @media #{$tablet-width} {
+      margin-bottom: 15px;
+    }
+  }
+
+  .footer-nav__item:last-of-type {
+    margin-bottom: 0;
   }
 
   &__link {
     font-size: 32px;
     font-weight: $bold;
+
+    @media #{$tablet-width} {
+      font-size: 20px;
+    }
+
+    @media #{$phone-width} {
+      display: block;
+      text-align: center;
+    }
   }
 }

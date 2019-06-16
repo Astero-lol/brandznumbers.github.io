@@ -1,8 +1,13 @@
 @import "../vars";
+@import "../media";
 
 .work {
   &__image {
     margin-bottom: 35px;
+
+    @media #{$phone-width} {
+      margin-bottom: 15px;
+    }
   }
 
   &__label {
