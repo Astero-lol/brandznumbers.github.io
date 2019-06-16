@@ -1,21 +1,129 @@
 @import "../vars";
 @import "../media";
 
+$icon-width: 20px;
+$icon-height: 20px;
+$icon-line-height: 3px;
+
 .header-nav {
   display: flex;
-
-  @media #{$phone-width} {
-    display: none;
-  }
 
   &__item {
     margin-right: 32px;
     list-style-type: none;
+
+    @media #{$phone-width} {
+      margin: 0 0 20px;
+      text-align: center;
+    }
+  }
+
+  &__list {
+    display: flex;
+
+    @media #{$phone-width} {
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+
+      display: block;
+      width: 100%;
+      height: 100%;
+      padding-top: 140px;
+
+      background-color: $gray;
+
+      transition: transform $duration;
+
+      transform: translateX(100%);
+    }
+  }
+
+  &__icon-item {
+    position: relative;
+    width: $icon-width;
+    height: $icon-height;
+  }
+
+  &__icon {
+    $font-size: 16px;
+
+    & {
+      display: none;
+      position: absolute;
+      right: $phone-gap;
+      z-index: 10;
+
+      text-align: center;
+      overflow: hidden;
+      text-transform: uppercase;
+      font-size: $font-size;
+      line-height: 1;
+    }
+
+    @media #{$phone-width} {
+      display: block;
+    }
+
+    &_active {
+      .header-nav__line {
+        &_1 {
+          transform: translateY(10px) rotate(45deg);
+        }
+        &_2 {
+          opacity: 0;
+        }
+        &_3 {
+          transform: translateY(-7px) rotate(-45deg);
+        }
+      }
+
+      & ~ .header-nav__list {
+        transform: translateX(0);
+      }
+    }
+  }
+
+  &__line {
+    & {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: $icon-line-height;
+      background: #000;
+      transition: opacity $duration, transform $duration;
+    }
+    &_1 {
+      top: 0;
+    }
+    &_2 {
+      top: 50%;
+      margin-top: calc(-1 * calc(#{$icon-line-height} / 2));
+    }
+    &_3 {
+      bottom: 0;
+    }
   }
 
   &__link {
     font-size: 14px;
     font-weight: $bold;
+
+    transition: color $duration;
+
+    @media #{$phone-width} {
+      font-size: 25px;
+    }
+
+    &:hover {
+      color: $orange;
+    }
+
+    &_active {
+      color: $orange;
+      border-bottom: 2px solid currentColor;
+    }
   }
 
   & .header-nav__item:last-of-type {

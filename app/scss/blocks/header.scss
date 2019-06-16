@@ -10,17 +10,8 @@
     max-width: 1360px;
     margin-bottom: 0;
 
-    @media (max-width: 1800px) {
-      margin-bottom: 70px;
-    }
-
     @media (max-width: 1400px) {
       max-width: $content-width;
-      margin-bottom: 50px;
-    }
-
-    @media #{$phone-width} {
-      margin-bottom: 0;
     }
   }
 }

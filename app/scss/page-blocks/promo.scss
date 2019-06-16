@@ -6,11 +6,11 @@
   padding-top: 70px;
 
   @media (max-width: 1800px) {
-    min-height: calc(100vh - #{$header-height});
-    //max-height: 800px;
+    min-height: 100vh;
   }
 
   @media #{$tablet-width} {
+    padding-top: 30px;
     min-height: initial;
     max-height: initial;
   }
