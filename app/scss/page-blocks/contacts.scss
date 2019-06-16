@@ -61,11 +61,32 @@
   }
 
   &__city {
+    position: relative;
     margin-bottom: 60px;
-    padding-bottom: 15px;
+    padding: 0 0 15px 25px;
+
     font-weight: $bold;
 
     border-bottom: 3px solid $border-color;
+
+    &:before {
+      position: absolute;
+      top: 8px;
+      left: 0;
+
+      width: 17px;
+      height: 20px;
+
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url('../../img/common/Geo-orange.svg');
+
+      content: '';
+
+      @media #{$tablet-width} {
+        top: 4px;
+      }
+    }
   }
 
   &__label {
