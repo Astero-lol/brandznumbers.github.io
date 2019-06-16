@@ -72,9 +72,14 @@
 
   &__result-label {
     color: $orange;
+    margin-bottom: 5px;
 
     @media #{$tablet-width} {
       margin-bottom: 10px;
+    }
+
+    @media #{$tablet-width} {
+      font-size: 80px;
     }
   }
 

@@ -18,6 +18,10 @@
 
         padding: 25px $tablet-gap;
       }
+
+      @media #{$phone-width} {
+        padding: 25px $phone-gap;
+      }
     }
   }
 

@@ -1,10 +1,19 @@
 @import "../vars";
+@import "../media";
 
 .contacts {
   padding: 70px 0 100px;
 
+  @media #{$tablet-width} {
+    padding: 0;
+  }
+
   &__heading {
     margin-bottom: 100px;
+
+    @media #{$tablet-width} {
+      margin-bottom: 50px;
+    }
   }
 
   &__content {
@@ -13,10 +22,32 @@
 
     max-width: 1000px;
     margin: 0 auto;
+
+    @media #{$tablet-width} {
+      margin-bottom: 70px;
+    }
   }
 
   &__info {
     padding-left: 110px;
+
+    @media #{$tablet-width} {
+      padding-left: 60px;
+    }
+
+    @media #{$phone-width} {
+      padding: 0;
+    }
+  }
+
+  &__image {
+    @media #{$tablet-width} {
+      width: 45%;
+    }
+
+    @media #{$phone-width} {
+      display: none;
+    }
   }
 
   &__items {

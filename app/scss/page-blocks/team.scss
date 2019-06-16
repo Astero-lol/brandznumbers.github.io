@@ -1,8 +1,23 @@
+@import "../vars";
+@import "../media";
+
 .team {
   padding: 70px 0 100px;
 
+  @media #{$tablet-width} {
+    padding: 0;
+  }
+
   &__heading {
     margin-bottom: 100px;
+
+    @media #{$tablet-width} {
+      margin-bottom: 50px;
+    }
+
+    @media #{$phone-width} {
+      margin-bottom: 40px;
+    }
   }
 
   &__list {
@@ -18,11 +33,28 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 60px;
+
+    @media #{$tablet-width} {
+      margin-bottom: 40px;
+    }
+
+    @media #{$phone-width} {
+      display: block;
+    }
   }
 
   &__item {
     width: calc(50% - 30px);
     cursor: pointer;
+
+    @media #{$tablet-width} {
+      width: calc(50% - 10px);
+    }
+
+    @media #{$phone-width} {
+      width: 100%;
+      margin-bottom: 40px;
+    }
   }
 
   &__photo {
@@ -51,6 +83,11 @@
 
     background-color: #fff;
 
+    @media #{$phone-width} {
+      display: block;
+      padding: 15px;
+    }
+
     & .team__role {
       margin: 0;
     }
@@ -58,10 +95,38 @@
 
   &__detail-item-cell {
     width: 50%;
+
+    &_media {
+      @media #{$tablet-width} {
+        width: 35%;
+      }
+
+      @media #{$phone-width} {
+        width: 100%;
+        margin-bottom: 25px;
+      }
+    }
+
+    &_info {
+      @media #{$tablet-width} {
+        width: 65%;
+        padding-left: 30px;
+      }
+
+      @media #{$phone-width} {
+        width: 100%;
+        padding: 0;
+      }
+    }
   }
 
   &__detail-item-text p {
     margin-bottom: 25px;
+
+    @media #{$phone-width} {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
   }
 
   & .team__detail-item-text p:last-of-type {

@@ -1,17 +1,43 @@
+@import "../vars";
+@import "../media";
+
 .works {
   padding: 70px 0 100px;
 
+  @media #{$tablet-width} {
+    padding: 0;
+  }
+
   &__heading {
     margin-bottom: 30px;
+
+    @media #{$tablet-width} {
+      margin-bottom: 20px;
+    }
   }
 
   &__text {
     max-width: 600px;
     margin-bottom: 100px;
+
+    @media #{$tablet-width} {
+      margin-bottom: 40px;
+      max-width: 450px;
+    }
+  }
+
+  &__list {
+    @media #{$tablet-width} {
+      margin-bottom: 70px;
+    }
   }
 
   &__row {
     display: flex;
     justify-content: space-between;
+
+    @media #{$tablet-width} {
+      display: block;
+    }
   }
 }

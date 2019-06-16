@@ -8,6 +8,11 @@
     display: flex;
     justify-content: space-between;
     max-width: 1360px;
+    margin-bottom: 0;
+
+    @media (max-width: 1800px) {
+      margin-bottom: 70px;
+    }
 
     @media (max-width: 1400px) {
       max-width: $content-width;
@@ -15,7 +20,7 @@
     }
 
     @media #{$phone-width} {
-      margin-bottom: 20px;
+      margin-bottom: 0;
     }
   }
 }
