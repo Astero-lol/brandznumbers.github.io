@@ -20,11 +20,6 @@
     flex: 1;
     flex-direction: column;
 
-    //@media (max-width: 1800px) {
-    //  min-height: calc(100vh - #{$header-height});
-    //  max-height: 800px;
-    //}
-
     @media #{$tablet-width} {
       min-height: initial;
       max-height: initial;
